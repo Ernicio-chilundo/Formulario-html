@@ -5,13 +5,26 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    background-color: #202020;
+}
+
 .formulario {
-    width: 800px;
-    height: 500px;
-    background-color: rgba(137, 137, 255, 0.558);
+    width: 600px;
+    height: 600px;
     border-radius: 10px;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 255, 253);
+    background: linear-gradient(172deg, rgba(0, 255,253, 0.802784222737819) 0%, rgba(97, 113, 255, 0.83062644501160092) 70%);}
+
+.formulario>h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
 }
 
 .center_form {
@@ -33,9 +46,38 @@ form>input:focus {
     outline: none;
 }
 
+label {
+    color:#fff;
+}
+
 form>input {
     width: 500px;
     margin-bottom: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
+    background-color: #ffffffdc;
+}
+
+.btn>button {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #3cc2e7;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn>button:hover {
+    transition: 1s background;
+    background-color: #202020;
 }
